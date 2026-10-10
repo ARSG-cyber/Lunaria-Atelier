@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  
+  <!-- SEO Best Practices -->
+  <title>LUNARIA ATELIER — The Art of Feeling Beautiful | Luxury Beauty & Skincare Studio</title>
+  <meta name="description" content="Lunaria Atelier is an exclusive beauty studio specializing in advanced facials, personalized skincare, sculptural rituals, and restorative wellness experiences." />
+  <meta name="keywords" content="luxury facial, beauty atelier, personalized skincare, lymphatic sculpting, Lunaria Atelier, facial massage, organic beauty" />
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="LUNARIA ATELIER — The Art of Feeling Beautiful" />
+  <meta property="og:description" content="Thoughtful treatments. Expert hands. A more personal approach to feeling beautifully yourself." />
+  <meta property="og:image" content="/images/hero.jpg" />
+  <meta property="og:type" content="website" />
+  
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Core Design System Stylesheets -->
+  <link rel="stylesheet" href="/src/styles/variables.css" />
+  <link rel="stylesheet" href="/src/styles/base.css" />
+  <link rel="stylesheet" href="/src/styles/components.css" />
+  <link rel="stylesheet" href="/src/styles/sections.css" />
+  <link rel="stylesheet" href="/src/styles/app-mode.css" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%231A1614'/><path d='M50 20 A30 30 0 1 0 75 75 A38 38 0 1 1 50 20 Z' fill='%23FAF7F2'/></svg>" />
+</head>
+
+<body>
+  <!-- App Viewport Container (Provides seamless app wrapper when simulator is active) -->
+  <div id="app-viewport-container" class="app-wrapper-frame">
+
+    <!-- ====================================================================
+         SECTION 3: HEADER & NAVIGATION
+         ==================================================================== -->
+    <header class="header" id="site-header" role="banner">
+      <div class="nav-container">
+        <!-- Left: Wordmark -->
+        <a href="#hero" class="nav-brand" aria-label="Lunaria Atelier Home">
+          <span class="brand-wordmark">Lunaria</span>
+          <span class="brand-submark">Atelier</span>
+        </a>
+
+        <!-- Center: Editorial Navigation Links -->
+        <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
+          <a href="#hero" class="nav-link active">Home</a>
+          <a href="#treatments" class="nav-link">Treatments</a>
+          <a href="#philosophy" class="nav-link">Our Philosophy</a>
+          <a href="#the-studio" class="nav-link">The Studio</a>
+          <a href="#journal" class="nav-link">Journal</a>
+        </nav>
+
+        <!-- Right: Actions -->
+        <div class="nav-actions">
+          <button class="view-mode-toggle" id="header-mode-toggle" aria-label="Switch between web and app layout">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="5" y="2" width="14" height="20" rx="3" ry="3"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+            </svg>
+            <span>App Mode</span>
+          </button>
+          
+          <a href="#booking" class="btn btn-primary" id="header-book-btn">
+            Book an Appointment
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="nav-toggle-btn" id="mobile-toggle-btn" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Slide-out Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+      <div class="mobile-nav-links">
+        <a href="#hero" class="mobile-nav-link">Home</a>
+        <a href="#treatments" class="mobile-nav-link">Treatments</a>
+        <a href="#philosophy" class="mobile-nav-link">Our Philosophy</a>
+        <a href="#the-studio" class="mobile-nav-link">The Studio</a>
+        <a href="#journal" class="mobile-nav-link">Journal</a>
+      </div>
+
+      <div class="mobile-nav-footer">
+        <a href="#booking" class="btn btn-primary" style="width: 100%;">
+          Book an Appointment
+        </a>
+        <div style="font-size: var(--text-xs); color: var(--color-taupe); letter-spacing: 0.08em; text-transform: uppercase;">
+          48 Rue de Grenelle, Paris · +33 (0)1 42 68 89 20
+        </div>
+      </div>
+    </div>
+
+    <main id="main-content">
+      <!-- ==================================================================
+           SECTION 4: HERO SECTION (UNFORGETTABLE EDITORIAL COMPOSITION)
+           ================================================================== -->
+      <section class="hero-section" id="hero" aria-label="Introduction to Lunaria Atelier">
+        <div class="container">
+          <div class="hero-grid">
+            <!-- Left: Text Block -->
+            <div class="hero-content">
+              <span class="eyebrow">YOUR PERSONAL BEAUTY RITUAL</span>
+              <h1 class="hero-title">
+                Beauty, in<br />
+                your own<br />
+                <em>rhythm.</em>
+              </h1>
+              <p class="hero-description">
+                Thoughtful treatments. Expert hands. A more personal approach to feeling beautifully yourself.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#treatments" class="btn btn-primary" id="hero-explore-cta">
+                  EXPLORE TREATMENTS
+                </a>
+                <a href="#booking" class="btn btn-secondary" id="hero-book-cta">
+                  BOOK YOUR VISIT
+                </a>
+              </div>
+
+              <div class="hero-credibility">
+                <span>Personalized care</span>
+                <span class="dot">·</span>
+                <span>Considered rituals</span>
+                <span class="dot">·</span>
+                <span>Exceptional attention</span>
+              </div>
+            </div>
+
+            <!-- Right: Immersive Editorial Photograph -->
+            <div class="hero-media-wrapper">
+              <div class="hero-image-card">
+                <img 
+                  src="/images/hero.jpg" 
+                  alt="Lunaria Atelier peaceful facial therapy with botanical oils and gentle hands" 
+                  loading="eager"
+                  width="720"
+                  height="960"
+                />
+              </div>
+
+              <!-- Refined Floating Editorial Caption -->
+              <div class="hero-editorial-caption">
+                <span class="caption-tag">THE LUNARIA EXPERIENCE — EST. IN CARE</span>
+                <p class="caption-text">Where skin vitality meets mindful stillness. Bespoke facial rituals tailored to your skin’s biological rhythm.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           SECTION 5: BRAND PHILOSOPHY SECTION
+           ================================================================== -->
+      <section class="section philosophy-section" id="philosophy" aria-label="Our Philosophy">
+        <div class="container">
+          <div class="philosophy-grid">
+            <!-- Left: Large Editorial Photograph -->
+            <div class="philosophy-media">
+              <div class="philosophy-image-container">
+                <img 
+                  src="/images/philosophy.jpg" 
+                  alt="Botanical formulation and ceramic bowl preparation at Lunaria Atelier" 
+                  loading="lazy"
+                  width="700"
+                  height="525"
+                />
+              </div>
+              <div class="philosophy-stamp">
+                <span>Natural<br />Elegance</span>
+              </div>
+            </div>
+
+            <!-- Right: Philosophy Text & 3 Principles -->
+            <div class="philosophy-content">
+              <span class="eyebrow">OUR PHILOSOPHY</span>
+              <h2 class="philosophy-title">
+                Less routine.<br />
+                <em>More ritual.</em>
+              </h2>
+              <p class="philosophy-lead">
+                We believe beauty is deeply personal. Every treatment begins with listening, understanding your needs, and creating an experience that feels entirely your own.
+              </p>
+
+              <div class="principles-list">
+                <!-- Principle 01 -->
+                <div class="principle-item">
+                  <div class="principle-number">01</div>
+                  <div>
+                    <h3 class="principle-heading">PERSONALIZED CARE</h3>
+                    <p class="principle-desc">Treatments shaped around individual needs.</p>
+                  </div>
+                </div>
+
+                <!-- Principle 02 -->
+                <div class="principle-item">
+                  <div class="principle-number">02</div>
+                  <div>
+                    <h3 class="principle-heading">EXPERT HANDS</h3>
+                    <p class="principle-desc">Thoughtful techniques guided by professional expertise.</p>
+                  </div>
+                </div>
+
+                <!-- Principle 03 -->
+                <div class="principle-item">
+                  <div class="principle-number">03</div>
+                  <div>
+                    <h3 class="principle-heading">TIME WELL SPENT</h3>
+                    <p class="principle-desc">A calm, considered experience from arrival to aftercare.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           SECTION 6: SIGNATURE TREATMENTS
+           ================================================================== -->
+      <section class="section treatments-section" id="treatments" aria-label="Signature Treatments">
+        <div class="container">
+          <div class="section-header-editorial">
+            <div class="title-col">
+              <span class="eyebrow">THE ART OF CARE</span>
+              <h2>Your next favorite ritual.</h2>
+              <p class="lead">
+                Discover treatments designed around your skin, your needs, and the way you want to feel.
+              </p>
+            </div>
+            <div>
+              <a href="#booking" class="link-editorial" id="discover-treatments-link">
+                <span>DISCOVER ALL TREATMENTS</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="treatments-grid">
+            <!-- SERVICE 01 -->
+            <article class="treatment-card" data-treatment-id="signature-facial" tabindex="0" role="button" aria-label="View details for The Signature Facial">
+              <div class="treatment-media">
+                <img src="/images/treatment_facial.jpg" alt="The Signature Facial treatment" loading="lazy" />
+                <span class="treatment-duration-badge">60 minutes</span>
+              </div>
+              <div class="treatment-body">
+                <span class="treatment-number">01 — FACIAL RITUAL</span>
+                <h3 class="treatment-title">The Signature Facial</h3>
+                <p class="treatment-desc">A personalized facial designed to refresh the skin and support a healthy-looking complexion.</p>
+                <div class="treatment-footer">
+                  <span class="treatment-price">From $195</span>
+                  <div class="treatment-action-arrow" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- SERVICE 02 -->
+            <article class="treatment-card" data-treatment-id="sculpting-ritual" tabindex="0" role="button" aria-label="View details for The Sculpting Ritual">
+              <div class="treatment-media">
+                <img src="/images/treatment_sculpting.jpg" alt="The Sculpting Ritual with facial massage" loading="lazy" />
+                <span class="treatment-duration-badge">75 minutes</span>
+              </div>
+              <div class="treatment-body">
+                <span class="treatment-number">02 — CONTOURING & DRAINAGE</span>
+                <h3 class="treatment-title">The Sculpting Ritual</h3>
+                <p class="treatment-desc">A considered facial experience focused on massage, relaxation, and a refreshed appearance.</p>
+                <div class="treatment-footer">
+                  <span class="treatment-price">From $240</span>
+                  <div class="treatment-action-arrow" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- SERVICE 03 -->
+            <article class="treatment-card" data-treatment-id="skin-reset" tabindex="0" role="button" aria-label="View details for The Skin Reset">
+              <div class="treatment-media">
+                <img src="/images/treatment_reset.jpg" alt="The Skin Reset tailored skincare assessment" loading="lazy" />
+                <span class="treatment-duration-badge">45 minutes</span>
+              </div>
+              <div class="treatment-body">
+                <span class="treatment-number">03 — BARRIER RESTORATION</span>
+                <h3 class="treatment-title">The Skin Reset</h3>
+                <p class="treatment-desc">A tailored skincare treatment that begins with an assessment of your individual skin needs.</p>
+                <div class="treatment-footer">
+                  <span class="treatment-price">From $165</span>
+                  <div class="treatment-action-arrow" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- SERVICE 04 -->
+            <article class="treatment-card" data-treatment-id="restorative-escape" tabindex="0" role="button" aria-label="View details for The Restorative Escape">
+              <div class="treatment-media">
+                <img src="/images/treatment_escape.jpg" alt="The Restorative Escape slow immersive beauty ritual" loading="lazy" />
+                <span class="treatment-duration-badge">90 minutes</span>
+              </div>
+              <div class="treatment-body">
+                <span class="treatment-number">04 — HOLISTIC WELLNESS</span>
+                <h3 class="treatment-title">The Restorative Escape</h3>
+                <p class="treatment-desc">A slower, more immersive beauty ritual designed to create a moment of calm and care.</p>
+                <div class="treatment-footer">
+                  <span class="treatment-price">From $310</span>
+                  <div class="treatment-action-arrow" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           SECTION 7: FEATURED TREATMENT EXPERIENCE (HIGH-CONTRAST SECTION)
+           ================================================================== -->
+      <section class="section section-dark featured-section" id="featured" aria-label="The Lunaria Signature Experience">
+        <div class="container">
+          <div class="featured-grid">
+            <!-- Left: Art-directed Content -->
+            <div class="featured-content">
+              <span class="eyebrow eyebrow-dark">THE LUNARIA SIGNATURE</span>
+              <h2 class="featured-title">An hour, entirely yours.</h2>
+              <p class="featured-desc">
+                Step away from the everyday and into a treatment shaped around you. From the first consultation to the final touch, every detail is considered.
+              </p>
+
+              <div class="featured-details-list">
+                <div class="featured-detail-item">
+                  <div class="featured-detail-bullet"></div>
+                  <span>Personalized consultation</span>
+                </div>
+                <div class="featured-detail-item">
+                  <div class="featured-detail-bullet"></div>
+                  <span>Expert-led treatment</span>
+                </div>
+                <div class="featured-detail-item">
+                  <div class="featured-detail-bullet"></div>
+                  <span>Tailored aftercare guidance</span>
+                </div>
+              </div>
+
+              <div>
+                <a href="#booking" class="btn btn-light" id="btn-explore-experience">
+                  EXPLORE THE EXPERIENCE
+                </a>
+              </div>
+            </div>
+
+            <!-- Right: Immersive Photography -->
+            <div class="featured-media-card">
+              <img 
+                src="/images/signature_feature.jpg" 
+                alt="Atmospheric treatment room during signature ritual at Lunaria Atelier" 
+                loading="lazy"
+                width="720"
+                height="660"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           SECTION 8: THE STUDIO — SHOW THE REAL EXPERIENCE (ASYMMETRIC GALLERY)
+           ================================================================== -->
+      <section class="section studio-section" id="the-studio" aria-label="The Studio Space">
+        <div class="container">
+          <div class="section-header-editorial">
+            <div class="title-col">
+              <span class="eyebrow">STEP INSIDE</span>
+              <h2>A space to exhale.</h2>
+              <p class="lead">
+                Discover a thoughtfully designed studio where natural textures, considered details, and a warm welcome create room to slow down.
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-secondary" id="btn-explore-studio">
+                EXPLORE OUR STUDIO
+              </button>
+            </div>
+          </div>
+
+          <!-- Asymmetric Image Grid -->
+          <div class="studio-gallery-grid">
+            <!-- Item 1: Reception Area -->
+            <div class="studio-gallery-item studio-item-1" data-index="0" role="button" tabindex="0" aria-label="Open photo of reception sanctuary">
+              <img src="/images/studio_reception.jpg" alt="Welcoming reception area with curved oak and soft sunlight" loading="lazy" />
+              <div class="studio-item-overlay">
+                <span class="studio-overlay-caption">The Reception Sanctuary</span>
+                <span class="studio-overlay-sub">Lime-washed acoustics · Warm welcoming tea</span>
+              </div>
+            </div>
+
+            <!-- Item 2: Treatment Room -->
+            <div class="studio-gallery-item studio-item-2" data-index="1" role="button" tabindex="0" aria-label="Open photo of treatment suite">
+              <img src="/images/studio_room.jpg" alt="Calm treatment room with oatmeal linen bedding" loading="lazy" />
+              <div class="studio-item-overlay">
+                <span class="studio-overlay-caption">The Treatment Suite</span>
+                <span class="studio-overlay-sub">Acoustic serenity · Temperature-tempered linens</span>
+              </div>
+            </div>
+
+            <!-- Item 3: Tactile Details -->
+            <div class="studio-gallery-item studio-item-3" data-index="2" role="button" tabindex="0" aria-label="Open photo of tactile details">
+              <img src="/images/studio_details.jpg" alt="Rolled linen towels and amber formulation bottles" loading="lazy" />
+              <div class="studio-item-overlay">
+                <span class="studio-overlay-caption">Formulation & Touch</span>
+                <span class="studio-overlay-sub">Cold-pressed botanicals · Travertine trays</span>
+              </div>
+            </div>
+
+            <!-- Item 4: Consultation Lounge -->
+            <div class="studio-gallery-item studio-item-4" data-index="3" role="button" tabindex="0" aria-label="Open photo of consultation lounge">
+              <img src="/images/studio_consultation.jpg" alt="Calm consultation area with soft chairs and natural light" loading="lazy" />
+              <div class="studio-item-overlay">
+                <span class="studio-overlay-caption">Consultation Lounge</span>
+                <span class="studio-overlay-sub">Unhurried dialogue · Individual diagnostic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           SECTION 9: MEET THE EXPERTS
+           ================================================================== -->
+      <section class="section experts-section" id="experts" aria-label="Meet The Experts">
+        <div class="container">
+          <div class="section-header-editorial">
+            <div class="title-col">
+              <span class="eyebrow">THE PEOPLE BEHIND THE RITUALS</span>
+              <h2>Expertise, with a human touch.</h2>
+              <p class="lead">
+                Beautiful experiences begin with people who care. Meet the specialists dedicated to understanding your needs and helping you feel at your best.
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-secondary" id="btn-meet-team">
+                GET TO KNOW OUR TEAM
+              </button>
+            </div>
+          </div>
+
+          <div class="experts-grid">
+            <!-- Expert 1 -->
+            <article class="expert-card">
+              <div class="expert-portrait-wrapper">
+                <img src="/images/expert_elena.jpg" alt="Elena Rostova, Founder and Master Aesthetician" loading="lazy" />
+              </div>
+              <span class="expert-role">Lead Esthetician & Founder</span>
+              <h3 class="expert-name">Elena Rostova</h3>
+              <p class="expert-bio">
+                Trained in Paris and Zurich, Elena founded Lunaria on the conviction that calm and skin physiology are inseparable.
+              </p>
+              <div class="expert-specialty">
+                Area of Expertise: Advanced Dermal Therapy & Corneotherapy
+              </div>
+            </article>
+
+            <!-- Expert 2 -->
+            <article class="expert-card">
+              <div class="expert-portrait-wrapper">
+                <img src="/images/expert_camille.jpg" alt="Camille Laurent, Sculptural Facialist" loading="lazy" />
+              </div>
+              <span class="expert-role">Facial Sculptor & Ritual Specialist</span>
+              <h3 class="expert-name">Camille Laurent</h3>
+              <p class="expert-bio">
+                Specializing in gentle intra-oral muscular release and lymphatic flow, Camille guides complexions to natural lifted definition.
+              </p>
+              <div class="expert-specialty">
+                Area of Expertise: Lymphatic Drainage & Gua Sha Contouring
+              </div>
+            </article>
+
+            <!-- Expert 3 -->
+            <article class="expert-card">
+              <div class="expert-portrait-wrapper">
+                <img src="/images/expert_marcus.jpg" alt="Marcus Vance, Holistic Skincare Specialist" loading="lazy" />
+              </div>
+              <span class="expert-role">Holistic Skincare Therapist</span>
+              <h3 class="expert-name">Marcus Vance</h3>
+              <p class="expert-bio">
+                With a background in botanical formulation and barrier recovery, Marcus curates custom blends for reactive and stressed skin.
+              </p>
+              <div class="expert-specialty">
+                Area of Expertise: Barrier Restoration & Botanical Formulations
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           SECTION 10: CLIENT TESTIMONIALS
+           ================================================================== -->
+      <section class="section testimonials-section" id="testimonials" aria-label="Client Testimonials">
+        <div class="container">
+          <div class="section-header-editorial">
+            <div class="title-col">
+              <span class="eyebrow">KIND WORDS</span>
+              <h2>Care that speaks for itself.</h2>
+            </div>
+          </div>
+
+          <div class="testimonials-grid">
+            <!-- Testimonial 01 -->
+            <div class="testimonial-card">
+              <div class="testimonial-quote-mark">“</div>
+              <p class="testimonial-text">
+                Lunaria has redefined what personal care feels like for me. It’s not just the visible radiance afterward, but the serene mindfulness woven into every movement.
+              </p>
+              <div class="testimonial-meta">
+                <span class="testimonial-author">Sarah M.</span>
+                <span class="testimonial-treatment">The Signature Facial</span>
+              </div>
+            </div>
+
+            <!-- Testimonial 02 -->
+            <div class="testimonial-card">
+              <div class="testimonial-quote-mark">“</div>
+              <p class="testimonial-text">
+                The Sculpting Ritual is transformative. The tension in my jaw and brow dissolved completely. You leave feeling grounded, rested, and glowing.
+              </p>
+              <div class="testimonial-meta">
+                <span class="testimonial-author">Claire L.</span>
+                <span class="testimonial-treatment">The Sculpting Ritual</span>
+              </div>
+            </div>
+
+            <!-- Testimonial 03 -->
+            <div class="testimonial-card">
+              <div class="testimonial-quote-mark">“</div>
+              <p class="testimonial-text">
+                An atelier in every sense. Camille listened intently to my seasonal sensitivity and tailored every emulsion. My skin has never felt calmer.
+              </p>
+              <div class="testimonial-meta">
+                <span class="testimonial-author">Julian K.</span>
+                <span class="testimonial-treatment">The Skin Reset</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           SECTION 11: THE JOURNAL (NOTES ON BEAUTY)
+           ================================================================== -->
+      <section class="section journal-section" id="journal" aria-label="The Journal">
+        <div class="container">
+          <div class="section-header-editorial">
+            <div class="title-col">
+              <span class="eyebrow">NOTES ON BEAUTY</span>
+              <h2>A little more about your skin.</h2>
+              <p class="lead">
+                Essays, atelier perspectives, and thoughtful considerations for your personal ritual.
+              </p>
+            </div>
+            <div>
+              <a href="#journal" class="link-editorial" id="explore-journal-link">
+                <span>EXPLORE THE JOURNAL</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="journal-grid">
+            <!-- Article 1 -->
+            <article class="journal-card" data-article-id="building-ritual" tabindex="0" role="button" aria-label="Read article on building a skincare ritual">
+              <div class="journal-image-wrapper">
+                <img src="/images/journal_ritual.jpg" alt="Botanical dropper and ceramic dish" loading="lazy" />
+              </div>
+              <div class="journal-meta-row">
+                <span class="journal-category">RITUALS</span>
+                <span>·</span>
+                <span>4 MIN READ</span>
+              </div>
+              <h3 class="journal-title">Building a skincare ritual that works for you.</h3>
+              <p class="journal-excerpt">
+                Why deliberate reduction and listening to your skin’s biological cadence outlives twelve-step trends.
+              </p>
+              <span class="link-editorial" style="font-size: 0.72rem;">Read Notes →</span>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="journal-card" data-article-id="first-facial" tabindex="0" role="button" aria-label="Read article on what to expect from your first facial">
+              <div class="journal-image-wrapper">
+                <img src="/images/journal_first_facial.jpg" alt="Client consultation moment in atelier" loading="lazy" />
+              </div>
+              <div class="journal-meta-row">
+                <span class="journal-category">ATELIER GUIDE</span>
+                <span>·</span>
+                <span>6 MIN READ</span>
+              </div>
+              <h3 class="journal-title">What to expect from your first facial.</h3>
+              <p class="journal-excerpt">
+                From the unhurried consultation lounge to customized aftercare, how we tailor your arrival.
+              </p>
+              <span class="link-editorial" style="font-size: 0.72rem;">Read Notes →</span>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="journal-card" data-article-id="skin-understanding" tabindex="0" role="button" aria-label="Read article on why personalized skincare begins with understanding your skin">
+              <div class="journal-image-wrapper">
+                <img src="/images/journal_skincare.jpg" alt="Botanical extracts and delicate glass" loading="lazy" />
+              </div>
+              <div class="journal-meta-row">
+                <span class="journal-category">DERMAL SCIENCE</span>
+                <span>·</span>
+                <span>5 MIN READ</span>
+              </div>
+              <h3 class="journal-title">Why personalized skincare begins with understanding your skin.</h3>
+              <p class="journal-excerpt">
+                Looking beyond traditional skin typing to honor the complex ecosystem of your natural lipid barrier.
+              </p>
+              <span class="link-editorial" style="font-size: 0.72rem;">Read Notes →</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           SECTION 12: BOOKING EXPERIENCE (INTERACTIVE SCHEDULER)
+           ================================================================== -->
+      <section class="section booking-section" id="booking" aria-label="Appointment Booking Experience">
+        <div class="container">
+          <div style="text-align: center; max-width: 680px; margin: 0 auto;">
+            <span class="eyebrow" style="justify-content: center;">RESERVATIONS</span>
+            <h2 style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1rem;">Your time starts here.</h2>
+            <p class="lead">
+              Tell us what you are looking for, and let us help you find the right treatment.
+            </p>
+          </div>
+
+          <!-- Interactive 5-Step Booking Engine Mount Point -->
+          <div id="booking-app-root"></div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           SECTION 13: FINAL CALL TO ACTION
+           ================================================================== -->
+      <section class="closing-cta-section" id="closing-cta" aria-label="Make Room For Yourself">
+        <img class="closing-cta-bg" src="/images/cta_closing.jpg" alt="Atmospheric calm light in atelier" loading="lazy" />
+        <div class="closing-cta-overlay"></div>
+        
+        <div class="closing-cta-content">
+          <span class="eyebrow eyebrow-dark" style="justify-content: center; margin-bottom: 1.5rem;">THE ATELIER PROMISE</span>
+          <h2 class="closing-cta-title">Make room for yourself.</h2>
+          <p class="closing-cta-text">
+            Your next beauty ritual begins with a moment for you.
+          </p>
+
+          <div style="display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap;">
+            <a href="#booking" class="btn btn-accent" id="closing-book-btn">
+              BOOK YOUR VISIT
+            </a>
+            <a href="#the-studio" class="btn btn-light" id="closing-discover-btn">
+              DISCOVER LUNARIA
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====================================================================
+         SECTION 14: FOOTER
+         ==================================================================== -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-top-grid">
+          <!-- Col 1: Brand & Philosophy -->
+          <div class="footer-brand-col">
+            <span class="brand-wordmark">Lunaria Atelier</span>
+            <p class="footer-brand-statement">
+              "Thoughtful beauty. Personal rituals. Time well spent."
+            </p>
+            <p style="font-size: var(--text-xs); color: var(--color-taupe-light); line-height: 1.7; max-width: 320px;">
+              An exclusive beauty atelier specializing in advanced facials, personalized skincare, sculpting rituals, and restorative wellness.
+            </p>
+          </div>
+
+          <!-- Col 2: Navigation Links -->
+          <div>
+            <h4 class="footer-heading">ATELIER</h4>
+            <ul class="footer-links-list">
+              <li><a href="#treatments" class="footer-link">Treatments</a></li>
+              <li><a href="#philosophy" class="footer-link">Our Philosophy</a></li>
+              <li><a href="#the-studio" class="footer-link">The Studio</a></li>
+              <li><a href="#journal" class="footer-link">Journal</a></li>
+              <li><a href="#booking" class="footer-link">Book Appointment</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Contact & Hours Placeholders -->
+          <div>
+            <h4 class="footer-heading">VISIT US</h4>
+            <div class="footer-contact-item">
+              <strong>Sanctuary Address</strong><br />
+              48 Rue de Grenelle, 75007 Paris<br />
+              Suite 402, Mayfair, London
+            </div>
+            <div class="footer-contact-item">
+              <strong>Concierge</strong><br />
+              +33 (0)1 42 68 89 20<br />
+              concierge@lunaria-atelier.com
+            </div>
+            <div class="footer-contact-item">
+              <strong>Hours</strong><br />
+              Tue – Sat: 10:00 – 19:30<br />
+              Sun & Mon: Private Inquiries
+            </div>
+          </div>
+
+          <!-- Col 4: Newsletter & Social -->
+          <div>
+            <h4 class="footer-heading">NEWSLETTER</h4>
+            <p style="font-size: var(--text-sm); color: var(--color-taupe-subtle); margin-bottom: 0.5rem;">
+              Notes on beauty, delivered occasionally.
+            </p>
+            <form id="newsletter-form" class="newsletter-form" aria-label="Subscribe to newsletter">
+              <input 
+                type="email" 
+                id="newsletter-email" 
+                class="newsletter-input" 
+                placeholder="Enter your email" 
+                required 
+                aria-label="Email Address for Newsletter"
+              />
+              <button type="submit" class="btn btn-accent" style="padding: 0.85rem 1.25rem;">
+                Join
+              </button>
+            </form>
+
+            <div style="margin-top: 1.75rem;">
+              <h4 class="footer-heading" style="margin-bottom: 0.75rem;">CONNECT</h4>
+              <div style="display: flex; gap: 1.25rem; font-size: var(--text-sm);">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a>
+                <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="footer-link">Pinterest</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom">
+          <div>
+            © 2026 Lunaria Atelier. All rights reserved. Quiet luxury beauty and wellness.
+          </div>
+          <div style="display: flex; gap: 1.5rem;">
+            <a href="#" class="footer-link" onclick="event.preventDefault(); window.selectTreatmentAndBook('signature-facial');">Privacy Policy</a>
+            <a href="#" class="footer-link" onclick="event.preventDefault(); window.selectTreatmentAndBook('signature-facial');">Terms of Rituals</a>
+            <a href="#" class="footer-link" onclick="event.preventDefault(); window.selectTreatmentAndBook('signature-facial');">Accessibility</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ====================================================================
+         MOBILE BOTTOM APP BAR (ACTIVE ON SMARTPHONES & APP SIMULATOR)
+         ==================================================================== -->
+    <nav class="mobile-app-bar" role="navigation" aria-label="Mobile Bottom App Navigation">
+      <div class="mobile-app-nav-list">
+        <!-- Tab 1: Overview -->
+        <button class="mobile-app-tab active" data-target="hero" aria-label="Home">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          </svg>
+          <span>Overview</span>
+        </button>
+
+        <!-- Tab 2: Rituals -->
+        <button class="mobile-app-tab" data-target="treatments" aria-label="Treatments">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 6v6l4 2"></path>
+          </svg>
+          <span>Rituals</span>
+        </button>
+
+        <!-- Tab 3: Center Quick Book Action -->
+        <button class="mobile-app-tab mobile-app-tab-book" data-target="booking" aria-label="Book Visit">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+          <span>Book</span>
+        </button>
+
+        <!-- Tab 4: Studio -->
+        <button class="mobile-app-tab" data-target="the-studio" aria-label="The Studio">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M3 21h18"></path>
+            <path d="M5 21V7l8-4v18"></path>
+            <path d="M19 21V11l-6-3"></path>
+          </svg>
+          <span>Studio</span>
+        </button>
+
+        <!-- Tab 5: Journal -->
+        <button class="mobile-app-tab" data-target="journal" aria-label="Journal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+          <span>Journal</span>
+        </button>
+      </div>
+    </nav>
+
+  </div> <!-- End #app-viewport-container -->
+
+  <!-- Application Logic Module -->
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>

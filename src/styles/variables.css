@@ -1,0 +1,87 @@
+/* ==========================================================================
+   LUNARIA ATELIER — LUXURY DESIGN SYSTEM VARIABLES
+   Quiet Luxury · Editorial Typography · Natural Warmth
+   ========================================================================== */
+
+:root {
+  /* Color Palette */
+  --color-ivory: #FAF7F2;          /* Primary background */
+  --color-ivory-light: #FDFCFA;    /* Purest warm highlight */
+  --color-champagne: #F3EFE6;      /* Soft surface */
+  --color-champagne-subtle: #F7F5F0; 
+  --color-sand: #ECE6D8;           /* Elevated surface & soft borders */
+  --color-sand-deep: #DFD7C4;
+  
+  --color-espresso: #1A1614;       /* Primary text */
+  --color-espresso-rich: #141110;
+  --color-taupe: #6C635B;          /* Secondary text */
+  --color-taupe-light: #948A80;    /* Muted labels & captions */
+  --color-taupe-subtle: #B8B0A7;
+
+  --color-terracotta: #A85A43;     /* Selective accent */
+  --color-terracotta-hover: #934C36;
+  --color-terracotta-light: #F4ECE8;
+  --color-gold-champagne: #C4A265;  /* Subtle metallic whisper */
+
+  /* Dark Contrast Sections */
+  --color-charcoal-dark: #141211;   /* High-contrast background */
+  --color-charcoal-surface: #1E1B19;
+  --color-charcoal-border: rgba(250, 247, 242, 0.1);
+  --color-charcoal-text: #FAF7F2;
+  --color-charcoal-subtext: #ABA298;
+
+  /* Typography */
+  --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Typographic Scales */
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.84rem;     /* 13.5px */
+  --text-base: 0.95rem;   /* 15.2px */
+  --text-md: 1.05rem;     /* 16.8px */
+  --text-lg: 1.25rem;     /* 20px */
+  --text-xl: 1.5rem;      /* 24px */
+  --text-2xl: 2rem;       /* 32px */
+  --text-3xl: 2.75rem;    /* 44px */
+  --text-4xl: 3.5rem;     /* 56px */
+  --text-5xl: 4.75rem;    /* 76px */
+  --text-6xl: 6rem;       /* 96px */
+
+  /* Spacing */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1.25rem;
+  --space-lg: 2rem;
+  --space-xl: 3.25rem;
+  --space-2xl: 5rem;
+  --space-3xl: 7.5rem;
+  --space-4xl: 10rem;
+
+  /* Layout Containers */
+  --container-max: 1360px;
+  --container-reading: 780px;
+  --container-padding: clamp(1.25rem, 4vw, 3.5rem);
+
+  /* Transitions & Animation */
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 0.2s var(--ease-smooth);
+  --transition-standard: 0.35s var(--ease-editorial);
+  --transition-slow: 0.65s var(--ease-editorial);
+
+  /* Borders & Shadows */
+  --border-hairline: 1px solid rgba(26, 22, 20, 0.08);
+  --border-light: 1px solid rgba(26, 22, 20, 0.12);
+  --border-focus: 1px solid var(--color-terracotta);
+  --shadow-ambient: 0 16px 40px -12px rgba(26, 22, 20, 0.05);
+  --shadow-card: 0 20px 48px -16px rgba(26, 22, 20, 0.07);
+  --shadow-overlay: 0 32px 80px -20px rgba(10, 8, 7, 0.25);
+
+  /* Z-index layers */
+  --z-base: 1;
+  --z-nav: 100;
+  --z-app-bar: 150;
+  --z-modal: 500;
+  --z-toast: 900;
+}
